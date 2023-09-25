@@ -14,7 +14,7 @@ document
   });
 
 document.getElementById('reset-button').addEventListener('click', function () {
-  game.reset(new Player1('Sindu', 100, 15), new Player2('Arief', 100, 15));
+  game.reset();
 });
 
 document
