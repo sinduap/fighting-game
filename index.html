@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Fighting Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+
+  <body>
+    <br />
+
+    <div class="menu">
+      <div class="p1Info">
+        <div id="p1-name-label">Player 1</div>
+
+        <img id="p1" src="images/ken.gif" />
+
+        <div class="playerControls">
+          <div class="AttackDiv">
+            <h6>Press Q:</h6>
+            <button id="p1-attack-button">Attack</button>
+          </div>
+
+          <div class="HealDiv">
+            <h6>Press A:</h6>
+            <button id="p1-heal-button">Heal</button>
+          </div>
+        </div>
+
+        <div id="p1-health-label">100</div>
+      </div>
+
+      <button id="simulate-button">Simulate</button>
+
+      <div class="p2Info">
+        <div id="p2-name-label">Player 2</div>
+
+        <img id="p2" src="images/ryu.gif" />
+        <div class="playerControls">
+          <div class="AttackDiv">
+            <h6>Press P:</h6>
+            <button id="p2-attack-button">Attack</button>
+          </div>
+          <div class="HealDiv">
+            <h6>Press L:</h6>
+            <button id="p2-heal-button">Heal</button>
+          </div>
+        </div>
+
+        <div id="p2-health-label">100</div>
+      </div>
+    </div>
+    <br />
+
+    <div class="resultContainer">
+      <div id="result-label"></div>
+      <button id="reset-button">Reset</button>
+    </div>
+
+    <audio id="p1-attack-sound" controls style="display: none">
+      <source src="sounds/fastpunch.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="p1-heal-sound" controls style="display: none">
+      <source src="sounds/fastheal.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="p2-attack-sound" controls style="display: none">
+      <source src="sounds/quickhit.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="p2-heal-sound" controls style="display: none">
+      <source src="sounds/quickheal.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="victory-sound" controls style="display: none">
+      <source src="sounds/victory.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
